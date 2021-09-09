@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images/road.jpg);
+    background-size: 100%;
+
+}
+.runner img{
+    margin-top: 18%;
+    width: 70px;
+    height: 130px;
+    animation: walk 1s steps(8) infinite,
+               forward 10s linear infinite;
+}
+@keyframes walk{
+    0%{background-position: 0px;}
+    100%{background-position: -600px;}
+}
+@keyframes forward{
+    0%{transform: translateX(100px);}
+    100%{transform: translateX(1200px);}
+}
